@@ -14,6 +14,9 @@ export default {
 
 <template>
   <AppHeader />
+  <main>
+
+  </main>
   <footer>
     <InfoSection />
     <AppFooter />
