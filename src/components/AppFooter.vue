@@ -70,8 +70,11 @@ export default {
 
       img {
         height: 40px;
+        width: 55px;
+        object-fit: contain;
         padding-right: 0.7rem;
       }
+
 
       a {
         color: #fff;
