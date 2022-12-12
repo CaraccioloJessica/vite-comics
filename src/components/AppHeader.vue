@@ -69,24 +69,9 @@ export default {
 
       <nav>
         <ul>
-          <li>
-            <a href="#">
-              Link
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Link
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Link
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Link
+          <li v-for="(link, index) in links" :key="index">
+            <a :class="{ active: link.current }" :href="link.url">
+              {{ link.text }}
             </a>
           </li>
         </ul>
@@ -121,7 +106,12 @@ header {
 
         a {
           color: $gray_dc;
-          font-size: 0.8rem;
+          font-size: 0.6rem;
+
+          &:hover,
+          &.active {
+            color: $blue_dc;
+          }
         }
       }
     }
