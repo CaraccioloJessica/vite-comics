@@ -2,7 +2,33 @@
 export default {
   data() {
     return {
-
+      socials: [
+        {
+          img: './img/footer-facebook.png',
+          url: '#',
+          alt: 'Facebook'
+        },
+        {
+          img: './img/footer-twitter.png',
+          url: '#',
+          alt: 'Twitter'
+        },
+        {
+          img: './img/footer-youtube.png',
+          url: '#',
+          alt: 'Youtube'
+        },
+        {
+          img: './img/footer-pinterest.png',
+          url: '#',
+          alt: 'Pinterest'
+        },
+        {
+          img: './img/footer-periscope.png',
+          url: '#',
+          alt: 'Periscope'
+        },
+      ]
     }
   }
 }
@@ -21,7 +47,9 @@ export default {
         <h4>
           FOLLOW US
         </h4>
-        <img src="" alt="">
+        <a v-for="social in socials" :href="social.url">
+          <img :src="social.img" :alt="social.alt">
+        </a>
       </div>
     </div>
   </div>
@@ -53,8 +81,17 @@ export default {
     }
 
     .socials {
+      display: flex;
+      align-items: center;
+
       h4 {
         color: $blue_dc;
+        margin-right: 1rem;
+      }
+
+      img {
+        height: 1.6rem;
+        margin: 0 0.4rem;
       }
     }
   }
