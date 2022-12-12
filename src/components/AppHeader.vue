@@ -101,16 +101,18 @@ header {
 
       li {
         display: inline-block;
-        padding: 1rem;
+        padding: 0.6rem;
         font-weight: 600;
 
         a {
           color: $gray_dc;
-          font-size: 0.6rem;
+          font-size: 0.7rem;
 
           &:hover,
           &.active {
             color: $blue_dc;
+            border-bottom: 3px solid $blue_dc;
+            padding-bottom: 2.1rem;
           }
         }
       }
