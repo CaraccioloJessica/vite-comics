@@ -2,7 +2,33 @@
 export default {
   data() {
     return {
-
+      shop: [
+        {
+          img: '/img/buy-comics-digital-comics.png',
+          text: 'DIGITAL COMICS',
+          url: '#'
+        },
+        {
+          img: '/img/buy-comics-merchandise.png',
+          text: 'DC MERCHANDISE',
+          url: '#'
+        },
+        {
+          img: '/img/buy-comics-subscriptions.png',
+          text: 'SUBCRIPTION',
+          url: '#'
+        },
+        {
+          img: '/img/buy-comics-shop-locator.png',
+          text: 'COMIC SHOP LOCATOR',
+          url: '#'
+        },
+        {
+          img: '/img/buy-dc-power-visa.svg',
+          text: 'DC POWER VISA',
+          url: '#'
+        }
+      ]
     }
   }
 }
@@ -12,34 +38,10 @@ export default {
   <footer>
     <div class="blue_bar">
       <div class="container">
-        <div class="buy_info">
-          <img src="/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">
-            DIGITAL COMICS
-          </a>
-        </div>
-        <div class="buy_info">
-          <img src="/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">
-            DIGITAL COMICS
-          </a>
-        </div>
-        <div class="buy_info">
-          <img src="/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">
-            DIGITAL COMICS
-          </a>
-        </div>
-        <div class="buy_info">
-          <img src="/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">
-            DIGITAL COMICS
-          </a>
-        </div>
-        <div class="buy_info">
-          <img src="/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">
-            DIGITAL COMICS
+        <div class="buy_info" v-for="link in shop">
+          <img :src="link.img" :alt="link.text">
+          <a :href="link.url">
+            {{ link.text }}
           </a>
         </div>
       </div>
