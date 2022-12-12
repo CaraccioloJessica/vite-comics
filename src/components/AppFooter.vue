@@ -11,7 +11,14 @@ export default {
 
 <template>
   <div class="background_image">
-
+    <div class="container">
+      <div class="menu_section">
+        wwww
+      </div>
+      <div class="big_logo">
+        <img src="/img/dc-logo-bg.png" alt="dc-logo">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,8 +27,26 @@ export default {
 
 .background_image {
   background-image: url('./img/footer-bg.jpg');
-  min-height: 400px;
-  background-size: containt;
+  height: 280px;
   background-repeat: no-repeat;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .menu_section {}
+
+    .big_logo {
+      width: 400px;
+      position: relative;
+
+      img {
+        overflow: hidden;
+        position: absolute;
+        top: -65px;
+      }
+    }
+  }
 }
 </style>
