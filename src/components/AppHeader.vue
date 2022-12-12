@@ -96,24 +96,20 @@ header {
       transform: scale(0.55);
     }
 
-    ul {
-      list-style: none;
+    li {
+      display: inline-block;
+      padding: 0.6rem;
+      font-weight: 600;
 
-      li {
-        display: inline-block;
-        padding: 0.6rem;
-        font-weight: 600;
+      a {
+        color: $gray_dc;
+        font-size: 0.7rem;
 
-        a {
-          color: $gray_dc;
-          font-size: 0.7rem;
-
-          &:hover,
-          &.active {
-            color: $blue_dc;
-            border-bottom: 3px solid $blue_dc;
-            padding-bottom: 2.1rem;
-          }
+        &:hover,
+        &.active {
+          color: $blue_dc;
+          border-bottom: 3px solid $blue_dc;
+          padding-bottom: 2.1rem;
         }
       }
     }
