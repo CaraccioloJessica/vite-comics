@@ -133,8 +133,8 @@ export default {
 <template>
   <div class="background_image">
     <div class="container">
-      <div class="menu_section" v-for="(item, index) in menu" :key="index">
-        <ul>
+      <div class="menu_section">
+        <ul v-for="(item, index) in menu" :key="index">
           <h4>
             {{ item.title }}
           </h4>
@@ -167,16 +167,24 @@ export default {
     justify-content: space-between;
 
     .menu_section {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
 
-      h4 {
-        color: #fff;
-        padding: 0.9rem 2.5rem 0.6rem 0;
-      }
+      ul {
+        padding-right: 2.5rem;
 
-      li a {
-        color: #959595;
-        padding-bottom: 0.3rem;
-        font-size: 0.7rem;
+        h4 {
+          color: #fff;
+          padding: 0.9rem 0 0.6rem 0;
+        }
+
+        li a {
+          color: #959595;
+          padding-bottom: 0.3rem;
+          font-size: 0.7rem;
+        }
       }
     }
 
