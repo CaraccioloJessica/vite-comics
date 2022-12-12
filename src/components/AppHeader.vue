@@ -13,6 +13,6 @@ export default {
   <h1>Prova</h1>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
