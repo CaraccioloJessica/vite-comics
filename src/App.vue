@@ -2,24 +2,37 @@
 import AppHeader from './components/AppHeader.vue'
 import InfoSection from './components/InfoSection.vue'
 import AppFooter from './components/AppFooter.vue'
+import SocialSection from './components/SocialSection.vue'
 
 export default {
   components: {
     AppHeader,
     InfoSection,
-    AppFooter
+    AppFooter,
+    SocialSection
   }
 }
 </script>
 
 <template>
   <AppHeader />
+
   <main>
 
   </main>
+
   <footer>
-    <InfoSection />
-    <AppFooter />
+    <section>
+      <InfoSection />
+    </section>
+
+    <section>
+      <AppFooter />
+    </section>
+
+    <section>
+      <SocialSection />
+    </section>
   </footer>
   <main>
 
