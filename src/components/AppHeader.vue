@@ -120,13 +120,13 @@ header {
   }
 
   .jumbo {
-    max-height: 280px;
-    overflow: hidden;
+    height: 280px;
 
     img {
-      width: 100%;
       height: 100%;
+      width: 100%;
       object-fit: cover;
+      object-position: top;
     }
   }
 }
