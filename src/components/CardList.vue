@@ -92,6 +92,12 @@ export default {
   <div class="container">
     <!-- comics card -->
     <CardItem v-for="(comic, index) in comics" :key="index" :details="comic" />
+
+    <button>
+      <a href="#">
+        LOAD MORE
+      </a>
+    </button>
   </div>
 
 </template>
@@ -100,8 +106,22 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .container {
-  padding: 30px 0 100px 0;
+  padding-top: 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+
+  button {
+    font-weight: 600;
+    font-size: 0.6rem;
+    background-color: $blue_dc;
+    border: none;
+    padding: 5px 30px;
+    margin: 50px 0 20px 0;
+
+    a {
+      color: #fff;
+    }
+  }
 }
 </style>
