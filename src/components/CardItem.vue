@@ -1,15 +1,15 @@
 <script>
 export default {
-
+  props: {
+    details: Object
+  }
 }
 </script>
 
 <template>
   <div class="card">
-    <img
-      src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX"
-      alt="">
-    <h3>TITOLO</h3>
+    <img :src="details.thumb" :alt="details.series">
+    <h3>{{ details.series }}</h3>
   </div>
 </template>
 
@@ -17,11 +17,12 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .card {
-  width: calc(100% / 6);
-  height: 160px;
-  margin: 20px;
+  width: calc(100% / 6 - 20px);
+  height: 140px;
+  margin: 20px 10px;
 
   img {
+    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -30,8 +31,8 @@ export default {
 
   h3 {
     color: #fff;
-    font-size: 0.6rem;
-    margin: 10px 0;
+    font-size: 0.7rem;
+    margin-top: 10px;
   }
 }
 </style>

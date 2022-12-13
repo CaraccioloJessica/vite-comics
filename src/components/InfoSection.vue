@@ -51,8 +51,6 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .blue_bar {
-  // Margini da rimuovere quando ci sarà il main
-  margin-top: 100px;
   height: 120px;
   background-color: $blue_dc;
 
