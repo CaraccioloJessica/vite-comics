@@ -3,13 +3,15 @@ import AppHeader from './components/AppHeader.vue'
 import InfoSection from './components/InfoSection.vue'
 import AppFooter from './components/AppFooter.vue'
 import SocialSection from './components/SocialSection.vue'
+import CardList from './components/CardList.vue'
 
 export default {
   components: {
     AppHeader,
     InfoSection,
     AppFooter,
-    SocialSection
+    SocialSection,
+    CardList
   }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
   <AppHeader />
 
   <main>
+    <CardList />
 
   </main>
 
