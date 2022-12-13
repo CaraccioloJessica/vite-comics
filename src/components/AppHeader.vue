@@ -77,6 +77,10 @@ export default {
         </ul>
       </nav>
     </div>
+
+    <div class="jumbo">
+      <img src="/img/jumbotron.jpg" alt="">
+    </div>
   </header>
 </template>
 
@@ -112,6 +116,17 @@ header {
           padding-bottom: 2.1rem;
         }
       }
+    }
+  }
+
+  .jumbo {
+    max-height: 280px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
