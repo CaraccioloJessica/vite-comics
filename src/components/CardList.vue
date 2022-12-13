@@ -90,6 +90,10 @@ export default {
 
 <template>
   <div class="container">
+    <div id="series_tag">
+      <h2>CURRENT SERIES</h2>
+    </div>
+
     <!-- comics card -->
     <CardItem v-for="(comic, index) in comics" :key="index" :details="comic" />
 
@@ -110,6 +114,20 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+
+  #series_tag {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: $blue_dc;
+    padding: 8px 20px;
+
+    h2 {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+  }
 
   button {
     font-weight: 600;
