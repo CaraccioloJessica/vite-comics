@@ -91,7 +91,7 @@ export default {
 <template>
   <div class="container">
     <!-- comics card -->
-    <CardItem />
+    <CardItem v-for="(comic, index) in comics" :key="index" />
   </div>
 
 </template>
@@ -100,6 +100,7 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .container {
+  padding: 30px 0 100px 0;
   display: flex;
   flex-wrap: wrap;
 }
