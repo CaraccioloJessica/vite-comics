@@ -130,4 +130,16 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 944px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 733px) {
+  .container {
+    max-width: 90%;
+  }
+}
 </style>

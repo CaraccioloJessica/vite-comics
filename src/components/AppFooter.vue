@@ -163,41 +163,60 @@ export default {
   overflow: hidden;
 
   .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
 
     .menu_section {
-      height: 300px;
+      padding-top: 1rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
 
       ul {
-        padding-right: 2.5rem;
+        padding-right: 2rem;
 
         h4 {
           color: #fff;
-          padding: 0.9rem 0 0.6rem 0;
+          font-size: 0.9rem;
+          padding: 10px 0;
         }
 
-        li a {
-          color: #959595;
-          padding-bottom: 0.3rem;
-          font-size: 0.7rem;
+        li {
+          display: flex;
+          margin-bottom: 0.2rem;
+
+          a {
+            color: #959595;
+            font-size: 0.65rem;
+          }
         }
       }
     }
 
     .big_logo {
       width: 400px;
-      position: relative;
+      height: 100%;
 
       img {
         overflow: hidden;
-        position: absolute;
-        top: -65px;
+        position: relative;
+        top: -4rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .big_logo {
+    opacity: 0.3;
   }
 }
 </style>

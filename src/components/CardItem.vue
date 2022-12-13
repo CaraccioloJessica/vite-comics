@@ -17,12 +17,11 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .card {
-  width: calc(100% / 6 - 20px);
-  height: 140px;
+  width: calc(140px - 20px);
+  height: 120px;
   margin: 20px 10px;
 
   img {
-    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;

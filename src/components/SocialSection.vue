@@ -86,14 +86,28 @@ export default {
 
       h4 {
         color: $blue_dc;
-        margin-right: 1rem;
+        margin-right: 0.9rem;
       }
 
       img {
-        height: 1.6rem;
+        height: 1.4rem;
         margin: 0 0.4rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .container {
+    max-width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  h4 {
+    display: none;
   }
 }
 </style>

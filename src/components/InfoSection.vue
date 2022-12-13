@@ -51,30 +51,31 @@ export default {
 @use '../styles/partials/_variables' as *;
 
 .blue_bar {
-  height: 120px;
+  min-height: 70px;
   background-color: $blue_dc;
+  padding: 20px 0;
 
   .container {
+    min-height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .buy_info {
-      height: 120px;
       display: flex;
       align-items: center;
+      padding: 10px;
 
       img {
         height: 40px;
-        width: 55px;
+        width: 40px;
         object-fit: contain;
-        padding-right: 0.7rem;
+        margin-right: 10px;
       }
-
 
       a {
         color: #fff;
         font-size: 0.7rem;
-        padding-right: 3.5rem;
       }
     }
   }

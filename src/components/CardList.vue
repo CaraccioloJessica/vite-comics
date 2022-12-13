@@ -96,12 +96,12 @@ export default {
 
     <!-- comics card -->
     <CardItem v-for="(comic, index) in comics" :key="index" :details="comic" />
+  </div>
 
-    <button>
-      <a href="#">
-        LOAD MORE
-      </a>
-    </button>
+  <div id="btn">
+    <a href="#">
+      LOAD MORE
+    </a>
   </div>
 
 </template>
@@ -128,18 +128,19 @@ export default {
       color: #fff;
     }
   }
+}
 
-  button {
-    font-weight: 600;
-    font-size: 0.6rem;
-    background-color: $blue_dc;
-    border: none;
-    padding: 5px 30px;
-    margin: 50px 0 20px 0;
+#btn {
+  text-align: center;
+  width: 120px;
+  font-weight: 600;
+  font-size: 0.6rem;
+  padding: 8px 0;
+  margin: 50px auto 20px;
+  background-color: $blue_dc;
 
-    a {
-      color: #fff;
-    }
+  a {
+    color: #fff;
   }
 }
 </style>
